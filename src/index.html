@@ -1,17 +1,180 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <div class="form-field">Personal information<br>
+        <label for="surname">
+          Surname:
+          <input 
+          class="form-field-input" 
+          type="text" 
+          autocomplete="off" 
+          name="surname" 
+          required
+          ><br>
+        </label>
+        <label for="name">
+          Name:
+          <input class="form-field-input" 
+          type="text" 
+          autocomplete="off" 
+          name="name" 
+          required
+          ><br>
+        </label>
+        <label for="age">
+          How old are You?
+          <input class="form-field-input" 
+          type="number"
+          value="12" 
+          min="1" max="100" 
+          name="age" 
+          required
+          ><br>
+        </label>
+        <label for="born">
+          Full date of birth:
+          <input 
+          class="form-field-input" 
+          type="date" 
+          name="born" 
+          required
+          ><br>
+        </label>
+        <label for="term-of-agreement">
+          I accept the term of the agreement
+          <input 
+            class="form-field-input" 
+            type="checkbox" 
+            name="term-of-agreement" 
+            required
+          >
+        </label>
+      </div>
+
+      <div class="form-field">Registration<br>
+        <label for="e-mail">
+          E-mail:
+          <input 
+          class="form-field-input" 
+          type="email" 
+          placeholder="email@example.com" 
+          name="e-mail" 
+          required
+          ><br>
+        </label>
+        <label for="password">
+          Password:
+          <input 
+          class="form-field-input" 
+          type="password" 
+          name="password" 
+          minlength="6" 
+          maxlength="25" 
+          required
+          ><br>
+        </label>
+      </div>
+
+      <div class="form-field">An interesting fact about you! <br>
+
+
+        <label for="love-cats">
+          Do you love cats?
+          <input 
+          type="radio" 
+          name="love-cats" 
+          value="yes" 
+          checked
+          >Yes
+        </label>
+        <label for="love-cats">
+          <input 
+          class="form-field-input" 
+          type="radio" 
+          name="love-cats" 
+          value="no"
+          >No<br>
+        </label>
+
+        <label for="color">
+          What is your favorite color?
+          <input 
+          class="form-field-input" 
+          type="color" 
+          name="color"
+          ><br>
+        </label>
+        <label for="time-to-bed">
+          What time do you go to bed?
+          <input 
+          class="form-field-input" 
+          type="time" 
+          name="time-to-bed"
+          ><br>
+        </label>
+        <label for="car-brend">
+          What are your favorite brand of cars?
+          <select 
+          class="form-field-input" 
+          name="car-brend" 
+          required multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">AUDI</option>
+            <option value="ford">FORD</option>
+            <option value="jac">JAC</option>
+          </select>
+          <br>
+        </label>
+        <label for="rate-work">
+          How do you rate our work?
+          <input 
+          type="range" 
+          value="0" 
+          name="rate-work"
+          >
+        </label>
+
+      </div>
+
+      <div class="form-field">Additional info: <br>
+        <label for="comments">
+          Comments:
+          <textarea 
+          class="form-field-input" 
+          type="text" 
+          name="comments"
+         ></textarea><br>
+        </label>
+        <label for="recommend-us">
+          Would you recommend us?
+          <select class="form-field-input" name="recommend-us">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
+
   </body>
+
 </html>
