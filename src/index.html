@@ -14,25 +14,30 @@
     <h1>HTML Form</h1>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 
-      <div class="form-field">Personal information<br>
+      <div class="form-field">Personal information
+        <br>
         <label for="surname">
           Surname:
           <input 
             class="form-field-input" 
             type="text" 
             autocomplete="off" 
-            name="surname" 
+            name="surname"
+            id="surname"
             required
-          ><br>
+          >
+          <br>
         </label>
         <label for="name">
           Name:
           <input class="form-field-input" 
             type="text" 
             autocomplete="off" 
-            name="name" 
+            name="name"
+            id="name" 
             required
-          ><br>
+          >
+          <br>
         </label>
         <label for="age">
           How old are You?
@@ -41,8 +46,10 @@
             value="12" 
             min="1" max="100" 
             name="age" 
+            id="age" 
             required
-          ><br>
+          >
+          <br>
         </label>
         <label for="born">
           Full date of birth:
@@ -50,15 +57,18 @@
             class="form-field-input" 
             type="date" 
             name="born" 
+            id="born" 
             required
-          ><br>
+          >
+          <br>
         </label>
         <label for="term-of-agreement">
           I accept the term of the agreement
           <input 
             class="form-field-input" 
             type="checkbox" 
-            name="term-of-agreement" 
+            name="term-of-agreement"
+            id="term-of-agreement"
             required
           >
         </label>
@@ -71,31 +81,35 @@
             class="form-field-input" 
             type="email" 
             placeholder="email@example.com" 
-            name="e-mail" 
+            name="e-mail"
+            id="e-mail"
             required
-          ><br>
+          >
+          <br>
         </label>
         <label for="password">
           Password:
           <input 
             class="form-field-input" 
             type="password" 
-            name="password" 
+            name="password"
+            id="password"
             minlength="6" 
             maxlength="25" 
             required
-          ><br>
+          >
+          <br>
         </label>
       </div>
 
-      <div class="form-field">An interesting fact about you! <br>
-
-
+      <div class="form-field">An interesting fact about you!
+        <br>
         <label for="love-cats">
           Do you love cats?
           <input 
             type="radio" 
             name="love-cats" 
+            id="love-cats" 
             value="yes" 
             checked
           >Yes
@@ -104,18 +118,20 @@
           <input 
             class="form-field-input" 
             type="radio" 
-            name="love-cats" 
+            name="love-cats"  
             value="no"
-          >No<br>
+          >No
+          <br>
         </label>
-
         <label for="color">
           What is your favorite color?
           <input 
             class="form-field-input" 
             type="color" 
             name="color"
-          ><br>
+            id="color"
+          >
+          <br>
         </label>
         <label for="time-to-bed">
           What time do you go to bed?
@@ -123,13 +139,16 @@
             class="form-field-input" 
             type="time" 
             name="time-to-bed"
-          ><br>
+            id="time-to-bed"
+          >
+          <br>
         </label>
         <label for="car-brend">
           What are your favorite brand of cars?
           <select 
             class="form-field-input" 
             name="car-brend" 
+            id="car-brend" 
             required multiple
           >
             <option value="bmw">BMW</option>
@@ -145,9 +164,9 @@
             type="range" 
             value="0" 
             name="rate-work"
+            id="rate-work"
           >
         </label>
-
       </div>
 
       <div class="form-field">Additional info: <br>
@@ -157,16 +176,21 @@
             class="form-field-input" 
             type="text" 
             name="comments"
-         ></textarea><br>
+            id="comments"
+         ></textarea>
+          <br>
         </label>
         <label for="recommend-us">
           Would you recommend us?
-          <select class="form-field-input" name="recommend-us">
+          <select 
+            class="form-field-input" 
+            name="recommend-us"
+            id="recommend-us"
+          >
             <option value="yes" selected>yes</option>
             <option value="no">no</option>
           </select>
         </label>
-
       </div>
 
       <button type="submit">Submit</button>
