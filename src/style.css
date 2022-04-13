@@ -1,11 +1,11 @@
 /* styles go here */
+
 .form-field {
-  border: 2px solid grey;
-  padding: 0 10px;
   margin-bottom: 20px;
-  line-height: 1.5;
+  padding-bottom: 0;
 }
 
 .form-field-input {
   margin-bottom: 10px;
+  display: block;
 }
